@@ -1,7 +1,14 @@
 .App {
   text-align: center;
+  background-color: purple;
+  margin: 0;
+  color: white;
 }
 
+h1 {
+  margin-top: 1rem; 
+  margin: 0;
+}
 
 .App-header {
   background-color: #282c34;
@@ -14,6 +21,9 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.song-item-componet {
+  list-style: none;
+  /* display: flex;
+  justify-content: center;
+  flex-wrap: wrap; */
+} 
