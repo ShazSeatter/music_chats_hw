@@ -21,9 +21,10 @@ h1 {
   color: white;
 }
 
-.song-item-componet {
+/* .song-list-componet {
   list-style: none;
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  flex-wrap: wrap; */
-} 
+  flex-wrap: wrap;
+  width: 100%;
+}  */
