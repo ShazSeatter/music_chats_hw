@@ -5,9 +5,6 @@ import SongsList from "../components/SongsList";
 const SongsContainer = function () {
     const [songs, setSongs] = useState([])
 
-    useEffect(() => {
-        getSongs();
-    }, [])
 
     const getSongs = async function () {
         const response = await fetch('https://itunes.apple.com/gb/rss/topsongs/limit=20/json');
@@ -16,6 +13,9 @@ const SongsContainer = function () {
         console.log(songs.feed.entry) // now it is returning an array to work with
     }
 
+    useEffect(() => {
+        getSongs();
+    }, []) // the first time the page is loaded - fetch gets called 
 
     return (
         <SongsList songs={songs}/> // the array
